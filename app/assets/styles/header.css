@@ -1,0 +1,69 @@
+@import url("../global.css");
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--header-paddings);
+}
+
+.logo {
+  color: var(--white-100);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_name {
+  font-size: var(--header-name-size);
+}
+
+.header_navigation > ul{
+  display: flex;
+  gap: 2.5rem;
+}
+
+.theme_toggle {
+  background-image: var(--btn-gradient);
+  border-radius: var(--border-radius);
+  width: 60px;
+  height: 24px;
+
+  cursor: pointer;
+}
+
+.theme_toggle > svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--white-100);
+  transition: 0.3s;
+}
+
+/* light mode */
+.l_mode > .toggle_dark_mode {
+  display: none;
+}
+
+.l_mode > .toggle_light_mode {
+  display: inline;
+  transform: translate(90%, 3px);
+}
+
+.l_mode > .toggle {
+  transform: translate(3px, 3px);
+}
+
+/* dark mode */
+.d_mode > .toggle_dark_mode {
+  display: inline;
+  transform: translate(3px, 2px);
+}
+
+.d_mode > .toggle_light_mode {
+  display: none;
+}
+
+.d_mode > .toggle {
+  transform: translate(90%, 3px);
+}

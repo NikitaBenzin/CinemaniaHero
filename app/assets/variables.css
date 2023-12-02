@@ -1,0 +1,68 @@
+/* Variables */
+:root {
+  --orange-100: #f87719;
+  --black-100: #111111;
+  --black-200: #282828;
+  --black-200: #595959;
+  --black-300: #b7b7b7;
+  --white-100: #ffffff;
+  --white-200: #f8f8f8;
+
+  --btn-gradient: linear-gradient(141deg, #FFC226 9.4%, #F84119 91.91%);
+  --border-radius: 74px;
+
+  /* Theme Variables */
+  --main-body-background: #ffffff;
+  --header-background: #ffffff;
+  --text-color: #595959;
+}
+
+.dark_mode {
+  --orange-100: #f87719;
+  --black-100: #111111;
+  --black-200: #282828;
+  --black-200: #595959;
+  --black-300: #b7b7b7;
+  --white-100: #ffffff;
+  --white-200: #f8f8f8;
+
+  --btn-gradient: linear-gradient(141deg, #FFC226 9.4%, #F84119 91.91%);
+  --border-radius: 74px;
+
+  --main-body-background: #111111;
+  --header-background: #000;
+  --text-color: #b7b7b7;
+}
+
+.desktop {
+  --font-size-xxl: 64px;
+  --font-size-xl: 28px;
+  --font-size-l:  20px;
+  --font-size-m:  16px;
+  --font-size-s:  14px;
+
+  --header-paddings: 12px 32px;
+  --header-name-size: 24px; 
+}
+
+.tablet {
+  --font-size-xxl: 53px;
+  --font-size-xl: 24px;
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+
+  --header-paddings: 12px 32px;
+  --header-name-size: 24px; 
+}
+
+.mobile {
+  --font-size-xxl: 40px;
+  --font-size-xl: 20px;
+  --font-size-l: 14px;
+  --font-size-m: 12px;
+  --font-size-s: 10px;
+
+  --header-paddings: 8px 20px;
+  --header-name-size: 0px; 
+}

@@ -1,0 +1,40 @@
+@import url("../global.css");
+
+.hero {
+  color: var(--white-100);
+  background: var(--black-100);
+  background-image: url(../../../public/images/bg-home-image-1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+
+
+/* Buttons */
+.hero_btn > button {
+  font-size: var(--font-size-m);
+}
+
+.btn_filled {
+  background-image: var(--btn-gradient);
+  filter: drop-shadow(1px 1px 14px rgba(1, 1, 1, 0.25));
+}
+
+.btn_filled:hover {
+  color: var(--orange-100);
+  background: transparent;
+  border: 0.0625rem solid var(--orange-100);
+}
+
+
+.btn_unfilled {
+  border: 0.0625rem solid var(--white-100);
+  background-color: transparent;
+  color: var(--white-100);
+}
+
+.btn_unfilled:hover {
+  background-color: var(--white-100);
+  color: var(--orange-100);
+}
