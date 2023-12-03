@@ -24,6 +24,12 @@ header {
   gap: 2.5rem;
 }
 
+.header_navigation > a {
+  font-weight: 500;
+}
+
+
+/* toggle */
 .theme_toggle {
   background-image: var(--btn-gradient);
   border-radius: var(--border-radius);
@@ -41,29 +47,43 @@ header {
 }
 
 /* light mode */
-.l_mode > .toggle_dark_mode {
+.toggle_dark_mode {
   display: none;
 }
 
-.l_mode > .toggle_light_mode {
+.toggle_light_mode {
   display: inline;
   transform: translate(90%, 3px);
 }
 
-.l_mode > .toggle {
+.toggle {
   transform: translate(3px, 3px);
 }
 
 /* dark mode */
-.d_mode > .toggle_dark_mode {
+.dark_mode .toggle_dark_mode {
   display: inline;
   transform: translate(3px, 2px);
 }
 
-.d_mode > .toggle_light_mode {
+.dark_mode .toggle_light_mode {
   display: none;
 }
 
-.d_mode > .toggle {
+.dark_mode .toggle {
   transform: translate(90%, 3px);
 }
+
+/* 
+.theme_toggle:hover .toggle {
+  transform: translate(3px, 3px);
+}
+
+.theme_toggle:hover .toggle_dark_mode {
+  display: none;
+}
+
+.theme_toggle:hover .toggle_light_mode {
+  display: inline;
+  transform: translate(90%, 3px);
+} */

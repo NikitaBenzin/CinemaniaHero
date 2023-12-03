@@ -1,19 +1,42 @@
 @import url("../global.css");
 
 .hero {
-  color: var(--white-100);
-  background: var(--black-100);
-  background-image: url(../../../public/images/bg-home-image-1.png);
+  background-color: var(--hero-background);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
+  background-position: center right;
+  background-size: contain;
+  padding-top: 118px;
+  padding-bottom: 181px;
+  padding-left: 135px;
 }
 
+.hero_film_name {
+  color: var(--white-100);
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  max-width: 670px;
+}
+
+.starbar > ul {
+  display: flex;
+  gap: 4px;
+  padding: 16px 0 28px 0;
+}
+
+.hero_film_description {
+  color: var(--white-200);
+  max-width: 367px;
+  padding-bottom: 36px;
+}
 
 
 /* Buttons */
 .hero_btn > button {
   font-size: var(--font-size-m);
+}
+
+.hero_btn > button:last-child {
+  margin-left: 14px;
 }
 
 .btn_filled {
@@ -38,3 +61,4 @@
   background-color: var(--white-100);
   color: var(--orange-100);
 }
+
