@@ -1,0 +1,45 @@
+@import url("../global.css");
+
+.trailer_mask{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: var(--navigation-background);
+  transition: all .3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(1);
+}
+
+.trailer_none {
+  display: none;
+  transform: translate(-50%,-50%)scale(0);
+}
+
+.trailer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+}
+
+.trailer_player {
+  min-width: 50vw;
+  min-height: 27.7778vw;
+}
+
+@media screen and (max-width: 992px) { 
+  .trailer_player {
+    max-width: 80vw;
+    max-height: 44.4444vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trailer_player{
+    max-width: 90vw;
+    max-height: 50vw;
+  }
+}

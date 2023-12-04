@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="../assets/global.css">
   <link rel="stylesheet" href="../assets/styles/hero.css">
   <link rel="stylesheet" href="../assets/styles/header.css">
+  <link rel="stylesheet" href="../assets/styles/trailer.css">
+  <link rel="stylesheet" href="../assets/styles/details.css">
 
   <title>Cinemania | Home page</title>
 </head>
-<body class="desktop dark_mode">
+<body class="device dark_mode">
   
   <div class="container">
     <!-- Возможно надо будет обернуть в еще один блок -->
@@ -23,12 +25,17 @@
       </a>
 
       <nav class="header_navigation">
-        <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Catalog</a></li>
-          <li><a href="#">My library</a></li>
-        </ul>
+        <div class="menu">Menu</div>
+        <span class="header_navigation_wrapper">
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">My library</a></li>
+          </ul>
+        </span>
+        <span class="wrapper_bg"></span>
       </nav>
+      
 
       <div class="theme_toggle">
         <svg class="toggle_dark_mode" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M524-40q-84 0-157.5-32t-128-86.5Q184-213 152-286.5T120-444q0-146 93-257.5T450-840q-18 99 11 193.5T561-481q71 71 165.5 100T920-370q-26 144-138 237T524-40Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T504-425q-61-61-97-138t-43-163q-77 43-120.5 118.5T200-444q0 135 94.5 229.5T524-120Zm-20-305Z"/></svg>
@@ -64,9 +71,54 @@
       </p>
 
       <div class="hero_btn">
-        <button class="btn_filled">Watch trailer</button>
-        <button class="btn_unfilled">More details</button>
+        <button class="btn_filled watch_trailer">Watch trailer</button>
+        <button class="btn_unfilled more_details">More details</button>
       </div>
+
+      <div class="trailer_mask trailer_none">
+        <div class="trailer_container">
+          <iframe class="trailer_player" width="560" height="315" src="https://www.youtube.com/embed/IiMinixSXII?si=8j-FSI4w7De7B5hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="details_mask details_none">
+        <div class="details_container">
+          <img class="details_close" src="../../public/images/close.svg" alt="close btn">
+
+          <div class="details_image">
+            <img src="../../public/images/poster.png" alt="Dungeons & Dragons: Honor Among Thieves poster">
+          </div>
+        
+          <div class="details_info">
+            <p class="details_film_name">John Wick: Chapter 4</p>
+            <div class="details_rating">
+              <div>
+                <p>Vote / Votes</p>
+                <p>Popularity</p>
+                <p>Genre</p>
+              </div>
+
+              <div>
+                <p><span class="vote">7.3</span> / <span class="vote">1260</span></p>
+                <p>100.2</p>
+                <p>Action Thriller Crime</p>
+              </div>
+            <!--details_rating-->
+            </div>
+
+            <div class="details_description">
+              <p>About</p>
+              <p>John Wick (Keanu Reeves) takes on his most lethal adversaries yet in the upcoming fourth instalment of the series. With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</p>
+            </div>
+
+            <button class="btn_unfilled">Add to my library</button>
+          <!--details_info-->
+          </div>
+        <!--details_container-->
+        </div>
+      <!--details_mask-->
+      </div>
+
     <!-- hero -->
     </div>
   <!-- container -->

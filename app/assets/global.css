@@ -11,6 +11,10 @@ body {
   background-color: var(--main-body-background);
 }
 
+.disable_overflow {
+  overflow-y: hidden;
+}
+
 body,
 button,
 input {
@@ -40,6 +44,7 @@ li {
 /* Buttons */
 button {
   border-radius: var(--border-radius);
+  width: fit-content;
   padding: 0.75rem 1.5rem;
   border: 0.0625rem solid;
   color: var(--black-100);
@@ -52,4 +57,17 @@ button {
 
 .none {
   display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  button {
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    padding: 0.75rem 1.5rem;
+  }
 }

@@ -1,13 +1,17 @@
 [
   {
-    "Title": "Avatar",
-    "Genre": "Action, Adventure, Fantasy",
-    "Plot": "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-    "Poster": "http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
-    "imdbRating": "7.9",
-    "imdbVotes": "890,617",
+    "Images": [
+      "../../public/images/bg-home-image-1.png"
+    ]
+  },
+  {
+    "Title": "Dungeons & Dragons: Honor Among Thieves",
+    "Genre": "Action, Adventure, Comedy, Fantasy",
+    "Plot": "A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go dangerously awry when they run afoul of the wrong people.",
+    "Poster": "https://upload.wikimedia.org/wikipedia/ru/thumb/a/a9/Dungeons_%26_Dragons_Honor_Among_Thieves.jpg/320px-Dungeons_%26_Dragons_Honor_Among_Thieves.jpg",
+    "imdbRating": "7.3",
+    "imdbVotes": "203,301",
     "Type": "movie",
-    "Response": "True",
     "Images": [
      "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDg1Nzk1MV5BMl5BanBnXkFtZTcwMDk0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg"
     ]
