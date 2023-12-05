@@ -1,12 +1,8 @@
 @import url("../global.css");
 
-
-
-.details_mask{
+.details{
   width: 100%;
   height: 100%;
-  opacity: 1;
-  background-color: var(--navigation-background);
   transition: all .3s;
   position: fixed;
   top: 50%;
@@ -19,6 +15,16 @@
   justify-content: center;
 
   color: var(--black-100);
+}
+
+.details_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navigation-background);
 }
 
 .details_none {
@@ -49,6 +55,11 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  stroke: #111111;
+}
+
+.dark_mode .details_close {
+  stroke: #f8f8f8;
 }
 
 .details_image {
@@ -121,6 +132,26 @@
   color: var(--black-100);
 }
 
+.btn_unfilled_orange {
+  border: 1px solid var(--orange-100);
+}
+
+.btn_unfilled_orange:hover {
+  border: 1px solid var(--black-100);
+  background-color: var(--black-100);
+  color: var(--orange-100);
+}
+
+.dark_mode .btn_unfilled_orange {
+  color: var(--white-100);
+  background-color: var(--black-100);
+}
+
+.dark_mode .btn_unfilled_orange:hover {
+  color: var(--orange-100);
+  background-color: var(--white-100);
+}
+
 @media screen and (max-width: 992px) { 
   .details_image > img {
     max-width: 294px;
@@ -151,7 +182,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .details_mask {
+  .details {
     align-items: baseline;
     overflow-y: scroll;
   }

@@ -41,6 +41,7 @@
 .btn_filled {
   background-image: var(--btn-gradient);
   filter: drop-shadow(1px 1px 14px rgba(1, 1, 1, 0.25));
+  border: 0.0625rem solid var(--orange-100);
 }
 
 .btn_filled:hover {
@@ -53,23 +54,14 @@
 .btn_unfilled {
   border: 0.0625rem solid var(--white-100);
   background-color: transparent;
-  color: var(--black-100);
-  border: 1px solid var(--orange-100);
+  color: var(--white-100);
+  border: 1px solid var(--white-100);
 }
 
 .btn_unfilled:hover {
-  background-color: var(--black-100);
-  border: 1px solid var(--black-100);
-  color: var(--orange-100);
-}
-
-.dark_mode .btn_unfilled {
-  color: var(--white-100);
-}
-
-.dark_mode .btn_unfilled:hover {
-  color: var(--orange-100);
   background-color: var(--white-100);
+  border: 1px solid var(--white-100);
+  color: var(--orange-100);
 }
 
 @media screen and (max-width: 992px) {

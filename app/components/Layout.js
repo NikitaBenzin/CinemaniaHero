@@ -14,9 +14,10 @@ const trailerContainer = document.querySelector(".trailer_mask");
 const watchTrailerBtn = document.querySelector(".watch_trailer");
 
 // details
-const detailsContainer = document.querySelector(".details_mask");
+const details = document.querySelector(".details");
 const moreDetailsBtn = document.querySelector(".more_details");
 const closeDetailsBtn = document.querySelector(".details_close");
+const detailsMask = document.querySelector(".details_mask");
 
 // Theme Toggle
 themeToggle.addEventListener("click", () => {
@@ -33,7 +34,6 @@ headerNavigationBg.addEventListener("click", () => {
 });
 
 // hide trailer
-
 watchTrailerBtn.addEventListener("click", () => {
   trailerContainer.classList.remove("trailer_none");
   body.classList.add("disable_overflow");
@@ -46,9 +46,13 @@ trailerContainer.addEventListener("click", () => {
 
 // hide / show details
 moreDetailsBtn.addEventListener("click", () => {
-  detailsContainer.classList.remove("details_none");
+  details.classList.remove("details_none");
 });
 
 closeDetailsBtn.addEventListener("click", () => {
-  detailsContainer.classList.add("details_none");
+  details.classList.add("details_none");
+});
+
+detailsMask.addEventListener("click", () => {
+  details.classList.add("details_none");
 });
