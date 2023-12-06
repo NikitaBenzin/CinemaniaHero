@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../assets/styles/common/Trailer.css">
   <link rel="stylesheet" href="../assets/styles/common/Details.css">
   <link rel="stylesheet" href="../assets/styles/trends/Trends.css">
+  <link rel="stylesheet" href="../assets/styles/upcoming/Upcoming.css">
+  <link rel="stylesheet" href="../assets/styles/common/Footer.css">
 
   <title>Cinemania | Home page</title>
 </head>
@@ -127,7 +129,7 @@
 
     <div class="weekly_trends">
       <div>
-        <p>WEEKLY TRENDS</p>
+        <h2 class="section_name">WEEKLY TRENDS</h2>
         <a href="#">See all</a>
       </div>
 
@@ -161,12 +163,9 @@
           </div>
         </li>
 
-
-        <li class="film">
+        <li class="film" style="background-image: url(../../public/films/ghosted.png);">
           <span class="film_gradient"></span>
-
-          <img class="film_image" src="../../public/films/ghosted.png" alt="ghosted">
-
+          
           <div class="film_info">
             <span>
               <p class="film_name">ghosted</p>
@@ -193,11 +192,9 @@
           </div>
         </li>
 
-        <li class="film">
+        <li class="film" style="background-image: url(../../public/films/ghosted.png);">
           <span class="film_gradient"></span>
-
-          <img class="film_image" src="../../public/films/ghosted.png" alt="ghosted">
-
+          
           <div class="film_info">
             <span>
               <p class="film_name">ghosted</p>
@@ -224,10 +221,73 @@
           </div>
         </li>
       </ul>
-
     <!--weekly_trends-->
     </div>
 
+
+    <div class="upcoming">
+      <h2 class="section_name">upcoming this month</h2>
+      <div class="upcoming_film">
+        <div class="upcoming_image">
+          <span class="image_gradient"></span>
+
+          <picture>
+            <source media="(max-width: 600px)" srcset="../../public/films/upcoming_film_mobile.png">
+            <img src="../../public/films/upcoming_film.png" alt="Flowers" style="width:auto;">
+          </picture>
+        </div>
+
+        
+        <div class="details_info">
+          <p class="details_film_name">THE LOST CITY</p>
+          <div class="details_rating">
+            <div>
+              <span>
+                <p>Release date</p>
+                <p>Vote / Votes</p>
+              </span>
+              <span>
+                <p class="release_date">03.03.2023</p>
+                <p><span class="vote">7.3</span> / <span class="vote">1260</span></p>
+              </span>
+            </div>
+
+            <div>
+              <span>
+                <p>Popularity</p>
+                <p>Genre</p>
+              </span>
+              <span>
+                <p>99.9</p>
+                <p>Comedy, action</p>
+              </span>
+            </div>
+          <!--details_rating-->
+          </div>
+
+          <div class="details_description">
+            <p>About</p>
+            <p>Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to an ancient city's lost treasure from her latest story. Determined to prove he can be a hero in real life and not just on the pages of her books, Alan sets off to rescue her.</p>
+          </div>
+
+          <button class="btn_filled">Add to my library</button>
+        <!--details_info-->
+        </div>
+      </div>
+    <!--upcoming-->
+    </div>
+
+
+    <footer>
+      <div class="footer_container">
+        <p>© 2023 | All Rights Reserved |</p>
+        <span>
+          <p>Developed with</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 13.3765L6.02 12.4062C2.38 9.21808 0 7.06957 0 4.4359C0 2.28739 1.68 0.624023 3.85 0.624023C5.04 0.624023 6.23 1.17848 7 2.07947C7.77 1.17848 8.96 0.624023 10.15 0.624023C12.32 0.624023 14 2.28739 14 4.4359C14 7.06957 11.62 9.21808 7.98 12.4062L7 13.3765Z" fill="#F87719"/></svg>
+          <p>by <a href="https://github.com/NikitaBenzin">NikitaBenzin</a></p>
+        </span>
+      </div>
+    </footer>
 
   <!-- container -->
   </div>

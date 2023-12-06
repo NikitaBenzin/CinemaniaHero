@@ -59,6 +59,13 @@ button {
   display: none;
 }
 
+.section_name {
+  font-weight: 500;
+  color: var(--section-name-color);
+  font-size: var(--trends-h-size);
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 768px) {
   button {
     padding: 0.625rem 1.5rem;

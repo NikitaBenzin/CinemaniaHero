@@ -19,6 +19,7 @@
 
   --navigation-wrapper-background: #f8f8f8;
   --navigation-background: rgba(0, 0, 0, 0.20);
+  --section-name-color: #111111;
 }
 
 .dark_mode {
@@ -37,8 +38,10 @@
   --header-background: #000;
   --text-color: #b7b7b7;
   --hero-background: #111111;
+
   --navigation-wrapper-background: #171717;
   --navigation-background: rgba(255, 255, 255, 0.20);
+  --section-name-color: #ffffff;
 }
 
 .device {
@@ -55,7 +58,10 @@
   --hero-name-size: 64px;
   --hero-name-width: 670px;
 
-  --trends-paddings: 80px 32px 60px 32px;
+  --sections-paddings: 80px 32px 60px 32px;
+  --trends-header-padding: 28px;
+  --trends-h-size: 28px;
+  --film-name-padding: 0 20px 20px 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -73,7 +79,11 @@
     --hero-name-size: 44px;
     --hero-name-width: 445px;
 
-    --trends-paddings: 52px 32px 44px 32px;
+    --sections-paddings: 52px 32px 44px 32px;
+    --trends-header-padding: 24px;
+    --trends-h-size: 24px;
+    --film-name-padding: 0 12px 12px 12px;
+
   }
 }
 
@@ -93,6 +103,9 @@
     --hero-name-size: 32px;
     --hero-name-width: 232px;
 
-    --trends-paddings: 40px 20px 32px 20px;
+    --sections-paddings: 40px 20px 32px 20px;
+    --trends-header-padding: 24px;
+    --trends-h-size: 16px;
+    --film-name-padding: 0 12px 12px 12px;
   }
 }
