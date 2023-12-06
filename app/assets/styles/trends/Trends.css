@@ -1,0 +1,82 @@
+@import url("../../global.css");
+
+.weekly_trends {
+  padding: var(--trends-paddings);
+}
+
+.weekly_trends > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekly_trends > div > p {
+  font-weight: 500;
+  color: var(--white-100);
+  font-size: var(--font-size-xl);
+}
+
+.weekly_trends > div > a {
+  font-weight: 500;
+  color: var(--orange-100);
+  font-size: var(--font-size-xl);
+}
+
+.weekly_trends > div > a:hover {
+  text-decoration: underline;
+}
+
+.trends_films {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.film {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.film_gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(89, 131, 252, 0);
+  background-image: linear-gradient(180deg, rgba(89, 131, 252, 0) 60%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.film_image {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  vertical-align: bottom;
+}
+
+.film_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: var(--white-100);
+  font-weight: 500;
+}
+
+.film_name {
+  text-transform: uppercase;
+}
+.film_genre {
+  color: var(--black-300);
+}
+
+.film_year {
+}

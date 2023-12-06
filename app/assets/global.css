@@ -59,7 +59,6 @@ button {
   display: none;
 }
 
-
 @media screen and (max-width: 768px) {
   button {
     padding: 0.625rem 1.5rem;

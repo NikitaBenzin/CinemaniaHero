@@ -54,6 +54,8 @@
   --hero-paddings: 118px 0 181px 135px;
   --hero-name-size: 64px;
   --hero-name-width: 670px;
+
+  --trends-paddings: 80px 32px 60px 32px;
 }
 
 @media screen and (max-width: 992px) {
@@ -70,6 +72,8 @@
     --hero-paddings: 36px 0 63px 32px;
     --hero-name-size: 44px;
     --hero-name-width: 445px;
+
+    --trends-paddings: 52px 32px 44px 32px;
   }
 }
 
@@ -88,5 +92,7 @@
     --hero-paddings: 40px 0 54px 20px;
     --hero-name-size: 32px;
     --hero-name-width: 232px;
+
+    --trends-paddings: 40px 20px 32px 20px;
   }
 }

@@ -1,4 +1,4 @@
-@import url("../global.css");
+@import url("../../global.css");
 
 .details{
   width: 100%;
@@ -215,7 +215,15 @@
 }
 
 @media screen and (max-height: 600px) {
+  .details {
+    overflow-x: hidden;
+  }
+
   .details_image > img {
     max-height: 70vh;
+  }
+
+  .details_container {
+    align-self: baseline;
   }
 }

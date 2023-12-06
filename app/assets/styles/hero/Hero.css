@@ -1,4 +1,4 @@
-@import url("../global.css");
+@import url("../../global.css");
 
 .hero {
   background-color: var(--hero-background);
@@ -15,7 +15,7 @@
   max-width: var(--hero-name-width);
 }
 
-.starbar > ul {
+.starbar {
   display: flex;
   gap: 4px;
   padding: 16px 0 28px 0;
@@ -70,7 +70,7 @@
     padding-bottom: 28px;
   }
 
-  .starbar > ul {
+  .starbar{
     padding: 12px 0 20px 0;
   }
 
