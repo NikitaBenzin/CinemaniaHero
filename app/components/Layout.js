@@ -10,7 +10,7 @@ const menuNavigation = document.querySelector(".menu");
 const headerNavigationBg = document.querySelector(".wrapper_bg");
 
 // trailer
-const trailerContainer = document.querySelector(".trailer_mask");
+const trailerMask = document.querySelector(".trailer_mask");
 const watchTrailerBtn = document.querySelector(".watch_trailer");
 
 // details
@@ -27,32 +27,47 @@ themeToggle.addEventListener("click", () => {
 // Menu Toggle
 menuNavigation.addEventListener("click", () => {
   headerNavigation.classList.add("open");
+  body.classList.add("disable_overflow");
 });
 
 headerNavigationBg.addEventListener("click", () => {
   headerNavigation.classList.remove("open");
+  body.classList.remove("disable_overflow");
 });
 
 // hide trailer
+/**
+ * Creating of a trailer container with iframe inside every time
+ * when btn is clicked and remove it when window is closed
+ */
+let trailerContainer = document.createElement("div");
+trailerContainer.className = "trailer_container";
+
 watchTrailerBtn.addEventListener("click", () => {
-  trailerContainer.classList.remove("trailer_none");
+  trailerContainer.innerHTML = `<iframe class="trailer_player" width="560" height="315" src="https://www.youtube.com/embed/IiMinixSXII?si=8j-FSI4w7De7B5hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+  trailerMask.append(trailerContainer);
+  trailerMask.classList.remove("trailer_none");
   body.classList.add("disable_overflow");
 });
 
-trailerContainer.addEventListener("click", () => {
-  trailerContainer.classList.add("trailer_none");
+trailerMask.addEventListener("click", () => {
+  trailerMask.classList.add("trailer_none");
+  trailerContainer.parentNode.removeChild(trailerContainer);
   body.classList.remove("disable_overflow");
 });
 
 // hide / show details
 moreDetailsBtn.addEventListener("click", () => {
   details.classList.remove("details_none");
+  body.classList.add("disable_overflow");
 });
 
 closeDetailsBtn.addEventListener("click", () => {
   details.classList.add("details_none");
+  body.classList.remove("disable_overflow");
 });
 
 detailsMask.addEventListener("click", () => {
   details.classList.add("details_none");
+  body.classList.remove("disable_overflow");
 });

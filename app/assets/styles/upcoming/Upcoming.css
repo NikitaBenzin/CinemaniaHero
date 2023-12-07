@@ -97,4 +97,8 @@
   .upcoming .details_rating {
     flex-direction: column;
   }
+  .upcoming .section_name {
+    text-align: center;
+  }
+
 }
