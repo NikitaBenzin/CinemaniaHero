@@ -39,6 +39,11 @@
   background-size: cover;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.film:hover {
+  transform: scale(1.01);
 }
 
 .film_gradient {
