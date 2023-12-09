@@ -1,3 +1,5 @@
+import server from "./server.js";
+
 // Variables
 const body = document.querySelector("body");
 
@@ -162,31 +164,37 @@ class Film {
 
 
 
-const url = 'https://ott-details.p.rapidapi.com/advancedsearch?start_year=2000&end_year=2020&min_imdb=7&language=english&type=movie&sort=latest';
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': 'aec9dc9bf0msh733dd408533b5b4p1baea9jsn1d8f1a6fb9fd',
-    'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
-  }
-};
+server('popular')
+  .then(data => {
+    console.log(data.results);
+  })
 
-getResource(url, options).then((data) => {
-  // console.log(data.results);
-  let trendsFilmsCounter = 0;
 
-  for (let i = 0; i < data.results.length; i++) {
+// const url = 'https://ott-details.p.rapidapi.com/advancedsearch?start_year=2000&end_year=2020&min_imdb=7&language=english&type=movie&sort=latest';
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': 'aec9dc9bf0msh733dd408533b5b4p1baea9jsn1d8f1a6fb9fd',
+//     'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
+//   }
+// };
 
-    if (data.results[i].imageurl.length == 1 && trendsFilmsCounter < 3) {
-      new Film(
-        data.results[i].title,
-        data.results[i].released,
-        data.results[i].genre,
-        data.results[i].imageurl,
-        data.results[i].imdbrating
-      ).render();
-      trendsFilmsCounter += 1;
-    }
+// getResource(url, options).then((data) => {
+//   // console.log(data.results);
+//   let trendsFilmsCounter = 0;
 
-  }
-});
+//   for (let i = 0; i < data.results.length; i++) {
+
+//     if (data.results[i].imageurl.length == 1 && trendsFilmsCounter < 3) {
+//       new Film(
+//         data.results[i].title,
+//         data.results[i].released,
+//         data.results[i].genre,
+//         data.results[i].imageurl,
+//         data.results[i].imdbrating
+//       ).render();
+//       trendsFilmsCounter += 1;
+//     }
+
+//   }
+// });
