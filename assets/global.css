@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("./variables.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-body-background);
+}
+
+.disable_overflow {
+  overflow-y: hidden;
+}
+
+body,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--header-background);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.active {
+  color: var(--orange-100);
+}
+
+/* Lists */
+ul,
+li {
+  list-style: none;
+}
+
+/* Buttons */
+button {
+  border-radius: var(--border-radius);
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  border: 0.0625rem solid;
+  color: var(--black-100);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  transition: all 0.3s;
+
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.section_name {
+  font-weight: 500;
+  color: var(--section-name-color);
+  font-size: var(--trends-h-size);
+  text-transform: uppercase;
+}
+
+
+.film_search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search_bar {
+  height: 48px;
+  padding: var(--search-bar-padding);
+  border-radius: 8px;
+  border: 1px solid var(--search-bar-border);
+  background-color: var(--main-body-background);
+
+
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search_bar_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.search_bar_btn > svg {
+  transform: translateX(-50%);
+  fill: var(--section-name-color);
+}
+
+.search_bar_btn:hover > svg {
+  fill: var(--orange-100);
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    padding: 0.75rem 1.5rem;
+  }
+}

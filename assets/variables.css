@@ -1,0 +1,120 @@
+/* Variables */
+:root {
+  --orange-100: #f87719;
+  --black-100: #111111;
+  --black-200: #282828;
+  --black-200: #595959;
+  --black-300: #b7b7b7;
+  --white-100: #ffffff;
+  --white-200: #f8f8f8;
+
+  --btn-gradient: linear-gradient(141deg, #FFC226 9.4%, #F84119 91.91%);
+  --border-radius: 74px;
+
+  /* Theme Variables */
+  --main-body-background: #ffffff;
+  --header-background: #ffffff;
+  --text-color: #595959;
+  --hero-background: #111111;
+
+  --navigation-wrapper-background: #f8f8f8;
+  --navigation-background: rgba(0, 0, 0, 0.20);
+  --section-name-color: #111111;
+
+  --search-bar-border: #595959;
+}
+
+.dark_mode {
+  --orange-100: #f87719;
+  --black-100: #111111;
+  --black-200: #282828;
+  --black-200: #595959;
+  --black-300: #b7b7b7;
+  --white-100: #ffffff;
+  --white-200: #f8f8f8;
+
+  --btn-gradient: linear-gradient(141deg, #FFC226 9.4%, #F84119 91.91%);
+  --border-radius: 74px;
+
+  --main-body-background: #111111;
+  --header-background: #000;
+  --text-color: #b7b7b7;
+  --hero-background: #111111;
+
+  --navigation-wrapper-background: #171717;
+  --navigation-background: rgba(255, 255, 255, 0.20);
+  --section-name-color: #ffffff;
+
+  --search-bar-border: #ffffff;
+}
+
+.device {
+  --font-size-xxl: 64px;
+  --font-size-xl: 28px;
+  --font-size-l:  20px;
+  --font-size-m:  16px;
+  --font-size-s:  14px;
+
+  --header-paddings: 12px 32px;
+  --header-name-size: 24px; 
+  
+  --hero-paddings: 118px 0 181px 135px;
+  --hero-name-size: 64px;
+  --hero-name-width: 670px;
+
+  --sections-paddings: 80px 32px 60px 32px;
+  --trends-header-padding: 28px;
+  --trends-h-size: 28px;
+  --film-name-padding: 0 20px 20px 20px;
+
+  --search-bar-padding: 12px calc(260px - 158px) 12px 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .device {
+    --font-size-xxl: 53px;
+    --font-size-xl: 24px;
+    --font-size-l: 16px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+  
+    --header-paddings: 12px 32px;
+    --header-name-size: 24px;
+    
+    --hero-paddings: 36px 0 63px 32px;
+    --hero-name-size: 44px;
+    --hero-name-width: 445px;
+
+    --sections-paddings: 52px 32px 44px 32px;
+    --trends-header-padding: 24px;
+    --trends-h-size: 24px;
+    --film-name-padding: 0 12px 12px 12px;
+
+    --search-bar-padding: 12px calc(140px - 158px) 12px 20px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .device {
+    --font-size-xxl: 40px;
+    --font-size-xl: 20px;
+    --font-size-l: 14px;
+    --font-size-m: 12px;
+    --font-size-s: 10px;
+
+    --header-paddings: 8px 20px;
+    --header-name-size: 0px; 
+
+    --hero-paddings: 40px 0 54px 20px;
+    --hero-name-size: 32px;
+    --hero-name-width: 232px;
+
+    --sections-paddings: 40px 20px 32px 20px;
+    --trends-header-padding: 24px;
+    --trends-h-size: 16px;
+    --film-name-padding: 0 12px 12px 12px;
+    
+    --search-bar-padding: 10px calc(142px - 158px) 10px 20px;
+  }
+}
