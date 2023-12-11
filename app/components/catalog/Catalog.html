@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../public/favicon.ico" type="image/x-icon">
-  <!-- Styles links -->
-  <link rel="stylesheet" href="../assets/global.css">
-  <link rel="stylesheet" href="../assets/styles/hero/Hero.css">
-  <link rel="stylesheet" href="../assets/styles/common/Header.css">
-  <link rel="stylesheet" href="../assets/styles/common/Trailer.css">
-  <link rel="stylesheet" href="../assets/styles/common/Details.css">
-  <link rel="stylesheet" href="../assets/styles/trends/Trends.css">
-  <link rel="stylesheet" href="../assets/styles/upcoming/Upcoming.css">
-  <link rel="stylesheet" href="../assets/styles/common/Footer.css">
+  <link rel="shortcut icon" href="../../../public/favicon.ico" type="image/x-icon">
+    <!-- Styles links -->
+    <link rel="stylesheet" href="../../assets/global.css">
+    <link rel="stylesheet" href="../../assets/styles/hero/Hero.css">
+    <link rel="stylesheet" href="../../assets/styles/common/Header.css">
+    <link rel="stylesheet" href="../../assets/styles/common/Trailer.css">
+    <link rel="stylesheet" href="../../assets/styles/common/Details.css">
+    <link rel="stylesheet" href="../../assets/styles/trends/Trends.css">
+    <link rel="stylesheet" href="../../assets/styles/common/Footer.css">
 
-  <title>Cinemania | Home page</title>
+  <title>Cinemania | Catalog</title>
 </head>
 <body class="device dark_mode">
-
-
+  
   <header>
     <a class="logo" href="#">        
-      <img src="../../public/images/logo.svg" alt="Cinemania logo">
+      <img src="../../../public/images/logo.svg" alt="Cinemania logo">
       <p class="header_name">Cinemania</p>
     <!-- logo -->
     </a>
@@ -30,8 +28,8 @@
       <div class="menu">Menu</div>
       <span class="header_navigation_wrapper">
         <ul>
-          <li><a class="active" href="./Layout.html">Home</a></li>
-          <li><a href="./catalog/Catalog.html">Catalog</a></li>
+          <li><a href="../Layout.html">Home</a></li>
+          <li><a class="active" href="./Catalog.html">Catalog</a></li>
           <li><a href="#">My library</a></li>
         </ul>
       </span>
@@ -47,7 +45,7 @@
   </header>
 
 
-  <div class="hero" style="background-image: url('../../public/images/bg-home-image-1.png')">
+  <div class="hero" style="background-image: url('../../../public/images/bg-home-image-1.png')">
     <p class="hero_film_name">Dungeons & Dragons: Honor Among Thieves</p>
 
     <ul class="starbar">
@@ -80,67 +78,16 @@
   </div>
 
   <div class="weekly_trends">
-    <div>
-      <h2 class="section_name">WEEKLY TRENDS</h2>
-      <a href="./catalog/Catalog.html">See all</a>
+    <div class="film_search" style="justify-content: center;">
+      <input class="search_bar" type="text" placeholder="Search">
+      <button class="search_bar_btn btn_filled">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+      </button>
     </div>
 
-    <span class="films_layout"></span>
-
+    <span class="films_layout">
+    </span>
   <!--weekly_trends-->
-  </div>
-
-  <div class="upcoming">
-    <h2 class="section_name">upcoming this month</h2>
-    <div class="upcoming_film">
-      <div class="upcoming_image">
-        <span class="image_gradient"></span>
-
-        <picture>
-          <source media="(max-width: 600px)" srcset="../../public/films/upcoming_film_mobile.png">
-          <img src="../../public/films/upcoming_film.png" alt="Flowers" style="width:auto;">
-        </picture>
-      </div>
-
-      
-      <div class="details_info">
-        <p class="details_film_name">THE LOST CITY</p>
-        <div class="details_rating">
-          <div>
-            <span>
-              <p>Release date</p>
-              <p>Vote / Votes</p>
-            </span>
-            <span>
-              <p class="release_date">03.03.2023</p>
-              <p><span class="vote">7.3</span> / <span class="vote">1260</span></p>
-            </span>
-          </div>
-
-          <div>
-            <span>
-              <p>Popularity</p>
-              <p>Genre</p>
-            </span>
-            <span>
-              <p>99.9</p>
-              <p>Comedy, action</p>
-            </span>
-          </div>
-        <!--details_rating-->
-        </div>
-
-        <div class="details_description">
-          <p>About</p>
-          <p>Reclusive author Loretta Sage writes about exotic places in her popular adventure novels that feature a handsome cover model named Alan. While on tour promoting her new book with Alan, Loretta gets kidnapped by an eccentric billionaire who hopes she can lead him to an ancient city's lost treasure from her latest story. Determined to prove he can be a hero in real life and not just on the pages of her books, Alan sets off to rescue her.</p>
-        </div>
-
-        <button class="btn_filled">Add to my library</button>
-      <!--details_info-->
-      </div>
-    <!--upcoming_film-->
-    </div>
-  <!--upcoming-->
   </div>
 
   <footer>
@@ -154,52 +101,7 @@
     </div>
   </footer>
 
-
-
-  <div class="trailer_mask trailer_none">
-  </div>
-
-  <div class="details details_none">
-    <div class="details_mask"></div>
-    <div class="details_container">
-      <svg class="details_close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="close-outline"><path id="Vector" d="M17.25 17.25L6.75 6.75M17.25 6.75L6.75 17.25"  stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-    
-      <div class="details_image">
-        <img src="../../public/images/poster.png" alt="Dungeons & Dragons: Honor Among Thieves poster">
-      </div>
-    
-      <div class="details_info">
-        <p class="details_film_name">John Wick: Chapter 4</p>
-        <div class="details_rating">
-          <div>
-            <p>Vote / Votes</p>
-            <p>Popularity</p>
-            <p>Genre</p>
-          </div>
-
-          <div>
-            <p><span class="vote">7.3</span> / <span class="vote">1260</span></p>
-            <p>100.2</p>
-            <p>Action Thriller Crime</p>
-          </div>
-        <!--details_rating-->
-        </div>
-
-        <div class="details_description">
-          <p>About</p>
-          <p>John Wick (Keanu Reeves) takes on his most lethal adversaries yet in the upcoming fourth instalment of the series. With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</p>
-        </div>
-
-        <button class="btn_unfilled_orange">Add to my library</button>
-      <!--details_info-->
-      </div>
-    <!--details_container-->
-    </div>
-  <!--details_mask-->
-  </div>
-
-
-  <script type="module" src="./Layout.js"></script>
-  <script src="./server.js"></script>
+  <script type="module" src="../Layout.js"></script>
+  <script src="../server.js"></script>
 </body>
 </html>

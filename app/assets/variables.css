@@ -20,6 +20,8 @@
   --navigation-wrapper-background: #f8f8f8;
   --navigation-background: rgba(0, 0, 0, 0.20);
   --section-name-color: #111111;
+
+  --search-bar-border: #595959;
 }
 
 .dark_mode {
@@ -42,6 +44,8 @@
   --navigation-wrapper-background: #171717;
   --navigation-background: rgba(255, 255, 255, 0.20);
   --section-name-color: #ffffff;
+
+  --search-bar-border: #ffffff;
 }
 
 .device {
@@ -62,6 +66,8 @@
   --trends-header-padding: 28px;
   --trends-h-size: 28px;
   --film-name-padding: 0 20px 20px 20px;
+
+  --search-bar-padding: 12px calc(260px - 158px) 12px 24px;
 }
 
 @media screen and (max-width: 992px) {
@@ -84,6 +90,7 @@
     --trends-h-size: 24px;
     --film-name-padding: 0 12px 12px 12px;
 
+    --search-bar-padding: 12px calc(140px - 158px) 12px 20px;
   }
 }
 
@@ -107,5 +114,7 @@
     --trends-header-padding: 24px;
     --trends-h-size: 16px;
     --film-name-padding: 0 12px 12px 12px;
+    
+    --search-bar-padding: 10px calc(142px - 158px) 10px 20px;
   }
 }

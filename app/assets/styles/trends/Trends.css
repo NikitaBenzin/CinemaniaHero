@@ -22,12 +22,20 @@
   text-decoration: underline;
 }
 
-.trends_films {
+.films_layout {
+  justify-self: center;
+}
+
+.films {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 16px;
   width: fit-content;
+}
+
+.trends_section {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .film {
@@ -43,7 +51,7 @@
 }
 
 .film:hover {
-  transform: scale(1.01);
+  opacity: 0.75;
 }
 
 .film_gradient {
@@ -115,21 +123,21 @@
 
 
 @media screen and (max-width: 768px) {
-  .trends_films {
+  .films {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .trends_films > .film:nth-child(3) {
+  .trends_section > .film:nth-child(3) {
     display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .trends_films {
+  .films {
     grid-template-columns: 1fr;
   }
 
-  .trends_films > .film:nth-child(2) {
+  .trends_section > .film:nth-child(2) {
     display: none;
   }
 }
