@@ -54,7 +54,8 @@
   opacity: 0.75;
 }
 
-.film_gradient {
+.film::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -99,9 +100,6 @@
 }
 .film_genre {
   color: var(--black-300);
-}
-
-.film_year {
 }
 
 
