@@ -4,10 +4,6 @@ const IMAGES_URL = 'https://image.tmdb.org/t/p/w500';
 const GENRES_URL = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
 getMovies(API_URL_FILMS);
 
-
-
-
-
 async function getMovies(url) {
 
   const options = {
@@ -31,21 +27,14 @@ async function getMovies(url) {
   });
   const responseData = await response.json();
   //console.log(responseData.results);
+  const currentUrl = window.location.pathname;
 
-  if (getUrl() === 'Layout.html') {
+  if (currentUrl.includes("Layout.html")) {
     showTrendsMovies(responseData.results);
-  } else if (getUrl() === 'catalog/Catalog.html') {
+  } else if (currentUrl.includes("Catalog.html")) {
     showAllMovies(responseData.results);
     listenerForFilms(responseData.results);
   }
-}
-
-function getUrl() {
-  const siteUrl = '/app/components/';
-  const currentUrl = window.location.pathname;
-  const url = currentUrl.split(siteUrl).join('');
-
-  return url;
 }
 
 function showTrendsMovies(data) {
