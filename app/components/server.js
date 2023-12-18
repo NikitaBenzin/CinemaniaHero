@@ -5,30 +5,36 @@ const GENRES_URL = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
 getMovies(API_URL_FILMS);
 
 async function getMovies(url) {
-  const response = await fetch(url, {
+
+  const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ODhmYjQ3NmFiZjE2OWUyNjJkYTdjNGE5NmNlZjNjNiIsInN1YiI6IjY1NzM2N2QxMWM2MzViMDBlMDQ4NjljNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AtPAvEfX_-tNDMES48k83LAe0KM9bB2LecBiG3quijE'
     }
+  };
+
+  const guestId = await fetch('https://api.themoviedb.org/3/authentication/guest_session/new', options);
+
+  const responseGuestId = await guestId.json();
+
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: `${responseGuestId.guest_session_id}`
+    }
   });
   const responseData = await response.json();
   //console.log(responseData.results);
+  const currentUrl = window.location.pathname;
 
-  if (getUrl() === 'Layout.html') {
+  if (currentUrl.includes("Layout.html")) {
     showTrendsMovies(responseData.results);
-  } else if (getUrl() === 'catalog/Catalog.html') {
+  } else if (currentUrl.includes("Catalog.html")) {
     showAllMovies(responseData.results);
     listenerForFilms(responseData.results);
   }
-}
-
-function getUrl() {
-  const siteUrl = '/app/components/';
-  const currentUrl = window.location.pathname;
-  const url = currentUrl.split(siteUrl).join('');
-
-  return url;
 }
 
 function showTrendsMovies(data) {
