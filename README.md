@@ -1,0 +1,3 @@
+- This project has api, but it's not working on github :(
+- Mobile / Desktop / Tablet
+- preview: https://nikitabenzin.github.io/CinemaniaHero/components/Layout.html
